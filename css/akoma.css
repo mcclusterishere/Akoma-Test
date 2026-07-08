@@ -31,8 +31,13 @@ a { color: var(--clay); }
 .head__cta { border: 1.5px solid var(--ink); border-radius: 100px; padding: 0.5em 1.2em; color: var(--ink) !important; }
 .head__cta:hover { background: var(--ink); color: var(--paper) !important; }
 
-/* hero */
-.hero { max-width: 62rem; margin: 0 auto; padding: clamp(4rem, 12vh, 8rem) clamp(1.2rem, 4vw, 3rem) clamp(3rem, 8vh, 5rem); }
+/* hero — the heart watermark carries the brand with zero photography */
+.hero { position: relative; max-width: 62rem; margin: 0 auto; overflow: visible;
+  padding: clamp(4rem, 12vh, 8rem) clamp(1.2rem, 4vw, 3rem) clamp(3rem, 8vh, 5rem); }
+.hero::before { content: ""; position: absolute; right: -4rem; top: 1rem; width: clamp(16rem, 36vw, 26rem);
+  aspect-ratio: 1; background: url("../assets/akoma-mark.svg") center / contain no-repeat;
+  opacity: 0.12; pointer-events: none; transform: rotate(8deg); }
+.hero > * { position: relative; }
 .hero__kicker, .sec-kicker { font-size: 0.72rem; letter-spacing: 0.28em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
 .hero h1 { font-family: var(--serif); font-weight: 900; font-size: clamp(3.2rem, 11vw, 7rem); line-height: 0.98;
   letter-spacing: -0.01em; margin: 0.5rem 0 1.2rem; }
@@ -129,6 +134,10 @@ section { padding: clamp(3rem, 8vh, 5.5rem) clamp(1.2rem, 4vw, 3rem); }
   border: 1px solid rgba(34, 21, 16, 0.3); background: none; font: inherit; cursor: pointer; }
 
 @media (max-width: 640px) {
-  .head__nav a:not(.head__cta) { display: none; }
+  /* phones keep the two doors that matter: Books and Visit */
+  .head__nav { gap: 0.7rem; }
+  .head__nav a { font-size: 0.8rem; }
+  .head__nav a[href="#coffee"], .head__nav a[href="#rooms"] { display: none; }
   .bsearch { flex-direction: column; }
+  .hero::before { right: -6rem; opacity: 0.09; }
 }
