@@ -9,7 +9,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/akoma-mark.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,900&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/akoma.css">
   <style>
     .pitch { max-width: 56rem; margin: 0 auto; padding: clamp(3rem, 8vh, 5rem) clamp(1.2rem, 4vw, 3rem) 5rem; }
@@ -28,6 +28,21 @@
     .pnum b { font-family: var(--serif); font-weight: 900; font-size: 1.9rem; display: block; }
     .pnum span { font-size: 0.84rem; color: var(--ink-2); }
     .tablewrap { overflow-x: auto; }
+
+    /* ============ ELDER-FIRST OVERRIDES — no fine print on a pitch ============
+       Body set in Atkinson Hyperlegible (built by the Braille Institute for
+       low-vision readers), 20px base, nothing under 1rem, weights up. */
+    html { font-size: 20px; }
+    .pitch, .pitch p, .pitch li, .ptable td { font-family: "Atkinson Hyperlegible", Verdana, sans-serif; }
+    .pitch p, .pitch li { font-size: 1.1rem; line-height: 1.75; color: var(--ink); }
+    .ptable { font-size: 1.02rem; }
+    .ptable th { font-size: 0.95rem; letter-spacing: 0.06em; color: var(--clay); font-weight: 700; }
+    .ptable td { padding: 0.85rem 0.7rem 0.85rem 0; line-height: 1.55; }
+    .pnum b { font-size: 2.4rem; }
+    .pnum span { font-size: 1.05rem; line-height: 1.6; color: var(--ink); }
+    .sec-kicker { font-size: 1rem; letter-spacing: 0.12em; font-weight: 700; }
+    .btn { font-size: 1.15rem; padding: 1em 2.1em; }
+    .foot { font-size: 1rem; font-weight: 700; color: var(--ink); }
   </style>
 </head>
 <body>
