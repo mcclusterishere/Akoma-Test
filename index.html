@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akoma — Books &amp; Coffee</title>
+  <meta name="description" content="Akoma: a bookstore and coffeehouse with a heartbeat — search half a million titles from our floor, order what we don't have on the shelf, and stay for the pour. Home of the podcast, the nonprofit, and the press.">
+  <link rel="icon" type="image/svg+xml" href="assets/akoma-mark.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/akoma.css">
+</head>
+<body>
+  <header class="head">
+    <a class="head__brand" href="#top">
+      <img src="assets/akoma-mark.svg" alt="Akoma heart mark">
+      <span>Akoma</span>
+    </a>
+    <nav class="head__nav">
+      <a href="#books">Books</a>
+      <a href="#coffee">Coffee</a>
+      <a href="#rooms">The House</a>
+      <a href="#visit" class="head__cta">Visit us</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <p class="hero__kicker">Books &amp; coffee · with a heartbeat</p>
+      <h1>The heart<br>reads here.</h1>
+      <p class="hero__sub"><em>Akoma</em> — the Adinkra symbol of the heart: patience, endurance, love.
+        A bookstore, a coffeehouse, a press, and a porch for the neighborhood. If we don't have your book
+        on the shelf, <strong>we'll find it and bring it in</strong> — search the whole catalog right here.</p>
+      <div class="hero__acts">
+        <a class="btn btn--fill" href="#books">Find your book</a>
+        <a class="btn" href="#coffee">See the coffee</a>
+      </div>
+    </section>
+
+    <!-- BOOKS: the native search -->
+    <section class="books" id="books">
+      <div class="sec-head">
+        <p class="sec-kicker">The catalog</p>
+        <h2>Every book, one search.</h2>
+        <p class="sec-sub">What's on our shelves is the beginning, not the end. Search millions of titles —
+          in print, out of print, rare — and order through Akoma. We source it, you pick it up with a coffee
+          in hand (or we ship it).</p>
+      </div>
+      <form class="bsearch" id="bkForm">
+        <input type="search" id="bkQ" placeholder="Title, author, ISBN — try “Things Fall Apart”" autocomplete="off" aria-label="Search books">
+        <button class="btn btn--fill" type="submit">Search</button>
+      </form>
+      <div class="bfilters" id="bkFilters">
+        <button type="button" class="chip is-on" data-mode="all">Everything</button>
+        <button type="button" class="chip" data-mode="rare">Rare &amp; vintage</button>
+        <button type="button" class="chip" data-mode="new">Recent printings</button>
+      </div>
+      <div class="bgrid" id="bkGrid">
+        <p class="bhint">Search anything — results come straight to this shelf. Every card orders through us,
+          so the sale stays in the house even when the book isn't.</p>
+      </div>
+    </section>
+
+    <!-- COFFEE -->
+    <section class="coffee" id="coffee">
+      <div class="sec-head">
+        <p class="sec-kicker">The other shelf</p>
+        <h2>Coffee, finally on the menu.</h2>
+        <p class="sec-sub">The room always smelled like it — now it's official. Small menu, done right.</p>
+      </div>
+      <div class="menu">
+        <div class="menu__item"><b>Drip · The Daily Chapter</b><span>house roast, bottomless while you read</span><i>$3</i></div>
+        <div class="menu__item"><b>Espresso · The Footnote</b><span>double, pulled short</span><i>$3.50</i></div>
+        <div class="menu__item"><b>Latte · The Love Letter</b><span>honey &amp; oat milk optional</span><i>$5</i></div>
+        <div class="menu__item"><b>Chai · The Old Testament</b><span>spiced, steamed, serious</span><i>$4.50</i></div>
+        <div class="menu__item"><b>Cold Brew · The Plot Twist</b><span>steeped 18 hours</span><i>$4.75</i></div>
+        <div class="menu__item"><b>Hot Chocolate · The Bedtime Story</b><span>for the young readers</span><i>$3.50</i></div>
+      </div>
+      <p class="menu__note">Menu is a working draft — the register wins any argument.</p>
+    </section>
+
+    <!-- THE HOUSE: nonprofit · podcast · press -->
+    <section class="rooms" id="rooms">
+      <div class="sec-head">
+        <p class="sec-kicker">One roof, four rooms</p>
+        <h2>More than a store.</h2>
+      </div>
+      <div class="rooms__grid">
+        <article class="room">
+          <h3>The Bookstore</h3>
+          <p>Curated shelves up front, half a million titles behind the search bar. New, used, and the ones
+            nobody else will chase down for you.</p>
+          <a href="#books">Search the catalog →</a>
+        </article>
+        <article class="room">
+          <h3>The Nonprofit</h3>
+          <p>Literacy is the mission — books into hands that need them, programs for the neighborhood,
+            a community room that works as hard as the espresso machine.</p>
+          <a href="#visit">Get involved →</a>
+        </article>
+        <article class="room">
+          <h3>The Podcast</h3>
+          <p>Conversations from the reading chair — authors, neighbors, and the stories between the stacks.
+            Recorded in the house.</p>
+          <a href="#visit">Listen in →</a>
+        </article>
+        <article class="room">
+          <h3>The Press</h3>
+          <p>The publishing arm: local voices, first runs, and books that deserve to exist. Submissions
+            welcome — bring us the manuscript.</p>
+          <a href="#visit">Pitch the press →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- VISIT -->
+    <section class="visit" id="visit">
+      <div class="sec-head">
+        <p class="sec-kicker">Come through</p>
+        <h2>Visit Akoma.</h2>
+      </div>
+      <div class="visit__grid">
+        <div class="visit__card">
+          <b>Find us</b>
+          <p id="vAddress">Address &amp; hours load in with the shop's details —<br>this build is ready for them.</p>
+        </div>
+        <div class="visit__card">
+          <b>Reach us</b>
+          <p><a href="mailto:hello@visitakoma.com">hello@visitakoma.com</a><br>Orders, podcast, press, and the nonprofit — one door.</p>
+        </div>
+        <div class="visit__card">
+          <b>Order a book</b>
+          <p>Search <a href="#books">the catalog</a>, tap “Order through Akoma,” and we'll confirm price and
+            pickup day — usually 2–5 business days.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <img src="assets/akoma-mark.svg" alt="" class="foot__mark">
+    <p>© <span id="yr">2026</span> Akoma — Books &amp; Coffee. The heart reads here.</p>
+  </footer>
+
+  <!-- order sheet -->
+  <div class="osheet" id="oSheet" hidden>
+    <div class="osheet__card">
+      <button class="osheet__x" id="oX" type="button" aria-label="Close">✕</button>
+      <p class="sec-kicker">Order through Akoma</p>
+      <h3 id="oTitle">Book</h3>
+      <p class="osheet__meta" id="oMeta"></p>
+      <p class="osheet__note">We'll source it and confirm your price and pickup/ship day by reply —
+        most orders land in 2–5 business days.</p>
+      <a class="btn btn--fill" id="oGo" href="#">Send the order</a>
+    </div>
+  </div>
+
+  <script src="js/books.js"></script>
+</body>
+</html>

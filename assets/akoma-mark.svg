@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Akoma: the Adinkra heart — patience, endurance, love -->
+  <path fill="#b5432a" d="M50 88C36 74 14 58 14 38 14 24 24 15 35 15c7 0 12 3 15 9 3-6 8-9 15-9 11 0 21 9 21 23 0 20-22 36-36 50z"/>
+  <path fill="none" stroke="#c08a2d" stroke-width="3.5" stroke-linecap="round"
+    d="M50 82C38 70 20 56 20 38c0-11 7-17 15-17 6 0 10 3 12 8m3-8c2-5 6-8 12-8 8 0 15 6 15 17 0 18-18 32-27 44"/>
+  <circle cx="50" cy="47" r="5" fill="#f5ecdc"/>
+</svg>
